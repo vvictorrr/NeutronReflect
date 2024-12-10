@@ -33,7 +33,6 @@ def diff_get_dataloaders_fromsplitarrays(xtr,ytr,xv,yv,xte,yte,batch_size):
     xtr = xtr.reshape(-1, 2, 6, 12)
     xv = xv.reshape(-1, 2, 6, 12)
     xte = xte.reshape(-1, 2, 6, 12)
-    print('farp')
 
     tr_set = torch.utils.data.TensorDataset(torch.from_numpy(xtr).float(), torch.from_numpy(ytr).float())
     tr_load = torch.utils.data.DataLoader(tr_set, batch_size=batch_size, shuffle=True)

@@ -70,9 +70,6 @@ class Decoder(nn.Module):
         x = self.decoder(x)
         return x
 
-def testy():
-  print("HELLO BRO!")
-
 class DiffSet():
     def __init__(self, train, ds):
 
@@ -121,7 +118,6 @@ class DiffusionModel(pl.LightningModule):
         """
         Corresponds to Algorithm 1 from (Ho et al., 2020).
         """
-        #print('BRUH')
         #print(type(batch))
         #print(len(batch))
         #print(batch.shape)
